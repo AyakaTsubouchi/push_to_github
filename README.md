@@ -5,6 +5,6 @@ command to execute a JAVA file on terminal
 <br>
 
 <p>type this command on your terminal </p>
-<p>javac filename.java</p>
+<p>$ javac filename.java</p>
 <p>and then </p>
-<p>java filename</p>
+<p>$ java filename</p>
