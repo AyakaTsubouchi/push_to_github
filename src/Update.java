@@ -7,7 +7,8 @@ public class Update {
 			"<< Chose the number >>",
 			"1.First commit",
 			"2.push an existing repository from the command line",
-			"3.check short cut key for terminal"					
+			"3.check short cut key for terminal",
+			"4.pull"
 		};
 		for(int i= 0; i < options.length; i++) {
 			System.out.println(options[i]);
@@ -55,6 +56,17 @@ public class Update {
 					System.out.println(procedure[i]);
 				}
 			}
+	public static void pull() {
+		String[] pull = {
+				"<< Command to pull >>",
+				"",
+				"$ git pull origin master",
+				
+				};		
+				for(int i= 0; i < pull.length; i++) {
+					System.out.println(pull[i]);
+				}
+			}
 	
 
 	public static void main(String[] args) {
@@ -75,6 +87,8 @@ public class Update {
 				break;
 			case 3:
 				executeProcedure();	
+			case 4:
+				pull();	
 				
 			}
 			System.out.println("continue or finish? 0.continue 1.finish");
