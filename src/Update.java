@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import lib.DigitalWatch;
+
 public class Update {
 	
 	public static void options() {
@@ -69,7 +71,8 @@ public class Update {
 			}
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
+		
 			int run = 0;
 			Scanner myObj = new Scanner(System.in);
 
