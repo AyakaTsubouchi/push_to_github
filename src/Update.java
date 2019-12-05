@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import lib.DigitalWatch;
 
 public class Update {
 	
@@ -10,7 +9,9 @@ public class Update {
 			"1.First commit",
 			"2.push an existing repository from the command line",
 			"3.check short cut key for terminal",
-			"4.pull"
+			"4.pull",
+			"5.git clone and create my branch",
+			"6.error"
 		};
 		for(int i= 0; i < options.length; i++) {
 			System.out.println(options[i]);
@@ -69,6 +70,31 @@ public class Update {
 					System.out.println(pull[i]);
 				}
 			}
+	public static void error() {
+		String[] error1 = {
+				"<< refusing to merge unrelated histories >>",
+				"",
+				"$git pull origin master --allow-unrelated-histories",
+				
+				};		
+				for(int i= 0; i < error1.length; i++) {
+					System.out.println(error1[i]);
+				}
+			}
+	public static void cloneAndBranch() {
+		String[]  cloneAndBranch= {
+				"<< clone >>",
+				"",
+				"go to the local repositri you want create",
+				"$git clone",
+				"$git checkout -b newBranchName",
+				
+				
+		};		
+		for(int i= 0; i < cloneAndBranch.length; i++) {
+			System.out.println(cloneAndBranch[i]);
+		}
+	}
 	
 
 	public static void main(String[] args) { 
@@ -92,6 +118,11 @@ public class Update {
 				executeProcedure();	
 			case 4:
 				pull();	
+			case 5:
+				cloneAndBranch();	
+			case 6:
+				error();	
+				
 				
 			}
 			System.out.println("continue or finish? 0.continue 1.finish");
